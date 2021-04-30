@@ -77,7 +77,7 @@ function getAssetRules({ fileLimit }) {
     fallback: 'file-loader',
     // We want to use predictable filenames for "subset" fonts.
     name(resourcePath) {
-      if (/-subset-/.test(resourcePath)) {
+      if (/_subset\\.woff2/.test(resourcePath)) {
         return '[name].[contenthash].[ext]';
       }
 

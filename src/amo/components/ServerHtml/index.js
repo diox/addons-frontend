@@ -127,9 +127,11 @@ export default class ServerHtml extends Component {
     const { assets, htmlLang } = this.props;
     // Preload relevant minimal subset font if available for this language.
     // Note the .* after '.var': this is for the contenthash that is added in
-    // production builds.
+    // production builds by getAssetRules() in webpack config.
+    // Original file look like Inter-roman-minimal_de_subset.var.woff2
+    // Production file look like Inter-roman-minimal_de_subset.var.hash.woff2
     const subsetFontPattern = new RegExp(
-      `subset-([a-z-]+\\+)*${htmlLang}(\\+[a-z-]+)*\\.var.*\\.woff2$`,
+      `minimal.*_${htmlLang}_.*subset\\.var.*\\.woff2$`,
       'i',
     );
 
