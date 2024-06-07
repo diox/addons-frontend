@@ -161,7 +161,7 @@
 }
 
 @mixin addon-section() {
-  background: $base-color;
+  background: var(--base-bg-color);
   overflow: hidden;
   padding: 10px 20px;
 
