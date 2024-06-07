@@ -1,19 +1,33 @@
 @import '~photon-colors/photon-colors';
 @import '~@mozilla-protocol/tokens/dist/index';
 
-// Add-on details
+// Base color variables
 :root {
   --primary-font-color: #000;
   --body-font-color: #1d1d1d;
   --text-color-default: #333;
+  --sub-text-color: #6a6a6a;
 }
 
-// Colours
-$sub-text-color: #6a6a6a;
+// Colors
 $button-background-color: #0095dd;
 $base-color: #fff;
 $link-color: $blue-60;
 $showmorecard-gradient-color: #f4f9ff;
+
+// Desktop variables colors (from specs)
+$black: #343a40;
+$white: #fff;
+$header-base-color: #0f1126;
+$footer-base-color: #051818;
+$action-hover-color: #72c3fc;
+$background-grey: #e9ecef;
+
+// Category Colors
+// There are currently 12 colors and this number must be kept in sync with
+// `src/amo/components/Categories/index.js`.
+$category-colors: $teal-70, $red-60, $magenta-60, $orange-60, $blue-50,
+  $green-70, $magenta-70, $red-50, $purple-40, $orange-70, $blue-60, $yellow-70;
 
 // Fonts
 $default-font-family: 'Clear Sans', Helvetica, Arial, sans-serif;
@@ -95,17 +109,3 @@ $max-content-width: 1366px;
 // Control the gutter to the left and right of the header and footer.
 // Mainly relevant to non-mobile screen-sizes.
 $header-footer-gutter: 24px;
-
-// Desktop variables colors (from specs)
-$black: #343a40;
-$white: #fff;
-$header-base-color: #0f1126;
-$footer-base-color: #051818;
-$action-hover-color: #72c3fc;
-$background-grey: #e9ecef;
-
-// Category Colors
-// There are currently 12 colors and this number must be kept in sync with
-// `src/amo/components/Categories/index.js`.
-$category-colors: $teal-70, $red-60, $magenta-60, $orange-60, $blue-50,
-  $green-70, $magenta-70, $red-50, $purple-40, $orange-70, $blue-60, $yellow-70;
