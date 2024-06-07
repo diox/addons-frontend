@@ -159,7 +159,7 @@
 
   .LanguagePicker-selector {
     background-color: $white;
-    color: $black;
+    color: var(--text-color-default);
     display: inline-block;
     font-family: sans-serif;
   }

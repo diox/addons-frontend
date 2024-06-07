@@ -12,7 +12,7 @@
   background-color: $white;
   border: 1px solid $white;
   border-radius: $border-radius-s;
-  color: $black;
+  color: var(--text-color-default);
   height: 27px;
   outline: 0;
   text-overflow: ellipsis;
@@ -46,7 +46,7 @@
   border-bottom-left-radius: $border-radius-s;
   border-bottom-right-radius: $border-radius-s;
   box-shadow: 1px 4px 3px transparentize($black, 0.5);
-  color: $black;
+  color: var(--text-color-default);
   margin: 0;
   padding: 0;
   position: absolute;

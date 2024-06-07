@@ -55,7 +55,7 @@
     &,
     &:link,
     &:visited {
-      color: $black;
+      color: var(--text-color-default);
     }
 
     &:active,

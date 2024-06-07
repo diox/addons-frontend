@@ -108,7 +108,7 @@
 
   &:link,
   &:visited {
-    color: $black;
+    color: var(--text-color-default);
   }
 
   &:active,
@@ -154,7 +154,7 @@
 }
 
 .Home-heroHeader {
-  color: $black;
+  color: var(--text-color-default);
   padding: $padding-page 0 $padding-page-l;
   text-align: center;
 

@@ -138,7 +138,7 @@ $micro-font-size: $font-size-xs;
     $background: $white,
     $background-active: $grey-10,
     $background-hover: $grey-20,
-    $color: $black
+    $color: var(--text-color-default)
   );
 }
 
@@ -179,6 +179,6 @@ $micro-font-size: $font-size-xs;
     $background: transparent,
     $background-active: transparent,
     $background-hover: transparent,
-    $color: $black
+    $color: var(--text-color-default)
   );
 }

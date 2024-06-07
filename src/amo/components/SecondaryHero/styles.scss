@@ -1,7 +1,7 @@
 @import '~amo/css/styles';
 
 .SecondaryHero {
-  color: $black;
+  color: var(--text-color-default);
   display: grid;
   grid-gap: $padding-page;
   grid-template-columns: auto;
