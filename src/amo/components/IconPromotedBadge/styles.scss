@@ -22,7 +22,7 @@ $icon-promoted-small-size: 16px;
 }
 
 .IconPromotedBadge-innerCircle-bgColor {
-  fill: $white;
+  fill: var(--white);
 }
 
 .IconPromotedBadge-circle-bgColor--recommended {
@@ -39,7 +39,7 @@ $icon-promoted-small-size: 16px;
 
 .IconPromotedBadge-iconPath--recommended,
 .IconPromotedBadge-iconPath--verified {
-  fill: $white;
+  fill: var(--white);
 }
 
 .IconPromotedBadge-large {

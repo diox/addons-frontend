@@ -17,7 +17,7 @@ textarea {
   // Fix search input and possibly other inputs.
   // See https://github.com/mozilla/addons-frontend/issues/3640
 
-  background: $white;
+  background: var(--white);
   border: 1px solid $grey-50;
   border-radius: $border-radius-xs;
   box-shadow: none;

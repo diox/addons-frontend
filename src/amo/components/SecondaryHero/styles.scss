@@ -62,7 +62,7 @@
 
 .SecondaryHero-module {
   align-items: center;
-  background-color: $white;
+  background-color: var(--white);
   border-radius: $border-radius-s;
   display: flex;
   flex-direction: column;

@@ -10,10 +10,10 @@
   --base-bg-color: #fff;
   --link-color: #0060df; /* $blue-60; */
   --showmorecard-gradient-color: #f4f9ff;
-  --shadow: #343a40;
+  --shadow: rgba(52, 59, 64, 0.5);
+  --white: #fff; /* FIXME need to split and rename */
 }
 
-$white: #fff;
 $header-base-color: #0f1126;
 $footer-base-color: #051818;
 $action-hover-color: #72c3fc;

@@ -9,7 +9,7 @@ $micro-font-size: $font-size-xs;
   $background-hover: $blue-70,
   $border-color: transparent,
   $border-radius: $border-radius-l,
-  $color: $white
+  $color: var(--white)
 ) {
   @include font-regular;
 
@@ -135,7 +135,7 @@ $micro-font-size: $font-size-xs;
 
 .Button--light {
   @include button(
-    $background: $white,
+    $background: var(--white),
     $background-active: $grey-10,
     $background-hover: $grey-20,
     $color: var(--text-color-default)

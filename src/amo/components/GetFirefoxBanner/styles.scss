@@ -11,7 +11,7 @@
   }
 
   border-radius: 0;
-  box-shadow: 0 1px 7px transparentize(var(--shadow), 0.5);
+  box-shadow: 0 1px 7px var(--shadow);
   color: $grey-90;
   font-size: $font-size-s;
   left: 50%;

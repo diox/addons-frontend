@@ -23,8 +23,8 @@
 // This is the triangle at the top of the tooltip menu which is
 // actually just a tilted square.
 .TooltipMenu-arrow {
-  background-color: $white;
-  box-shadow: 0 0 2px transparentize(var(--shadow), 0.5);
+  background-color: var(--white);
+  box-shadow: 0 0 2px var(--shadow);
   display: block;
   height: 8px;
   left: 50%;
@@ -41,12 +41,12 @@
 
 .TooltipMenu-inner {
   border-radius: $border-radius-default;
-  box-shadow: 0 0 2px transparentize(var(--shadow), 0.5);
+  box-shadow: 0 0 2px var(--shadow);
 }
 
 .TooltipMenu-list,
 .CardList .TooltipMenu-list {
-  background: $white;
+  background: var(--white);
   border-radius: $border-radius-default;
   list-style-type: none;
   margin: 0;

@@ -52,21 +52,21 @@
 
   &:active {
     &::after {
-      background-color: $white;
+      background-color: var(--white);
     }
   }
 }
 
 .SectionLinks-link--active,
 .SectionLinks-link--active:link {
-  color: $white;
+  color: var(--white);
 
   &,
   &:active,
   &:focus,
   &:hover {
     &::after {
-      background-color: $white;
+      background-color: var(--white);
       width: 100%;
     }
   }
