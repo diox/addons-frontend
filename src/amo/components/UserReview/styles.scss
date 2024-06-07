@@ -66,7 +66,7 @@
 .UserReview-reply-header {
   @include margin-end(6px);
 
-  color: $text-color-default;
+  color: var(--text-color-default);
   margin-bottom: 6px;
   margin-top: 0;
 

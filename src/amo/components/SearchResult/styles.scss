@@ -25,7 +25,7 @@ $icon-default-size: 32px;
   &:active,
   &:link,
   &:visited {
-    color: $text-color-default;
+    color: var(--text-color-default);
   }
 
   &:focus,
@@ -117,7 +117,7 @@ $icon-default-size: 32px;
   @include font-medium;
 
   align-items: flex-start;
-  color: $type-black;
+  color: $black;
   display: flex;
   flex-flow: column wrap;
   flex-grow: 1;
@@ -152,7 +152,7 @@ $icon-default-size: 32px;
   display: none;
 
   @include respond-to(medium) {
-    color: $type-black;
+    color: $black;
     display: block;
     flex-grow: 1;
     font-size: $font-size-s;
@@ -235,7 +235,7 @@ $icon-default-size: 32px;
 .SearchResult-note {
   background-color: transparentize($blue-50, 0.95);
   border-radius: $border-radius-default;
-  color: $type-black;
+  color: $black;
   flex-grow: 1;
   font-weight: normal;
   margin-top: 12px;

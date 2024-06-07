@@ -71,7 +71,7 @@
   }
 
   .AddonReviewCard-ratingOnly.AddonReviewCard-slim & {
-    color: $text-color-default;
+    color: var(--text-color-default);
 
     &:active,
     &:hover {
