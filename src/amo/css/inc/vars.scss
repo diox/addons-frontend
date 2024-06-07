@@ -8,14 +8,11 @@
   --text-color-default: #333;
   --sub-text-color: #6a6a6a;
   --base-bg-color: #fff;
+  --link-color: #0060df; /* $blue-60; */
+  --showmorecard-gradient-color: #f4f9ff;
+  --shadow: #343a40;
 }
 
-// Colors
-$link-color: $blue-60;
-$showmorecard-gradient-color: #f4f9ff;
-
-// Desktop variables colors (from specs)
-$black: #343a40;
 $white: #fff;
 $header-base-color: #0f1126;
 $footer-base-color: #051818;

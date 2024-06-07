@@ -60,13 +60,13 @@
 
     &:active,
     &:hover {
-      color: $link-color;
+      color: var(--link-color);
     }
   }
 
   a:active,
   a:hover {
-    color: $link-color;
+    color: var(--link-color);
   }
 
   a:focus {

@@ -45,7 +45,7 @@
   background-color: $white;
   border-bottom-left-radius: $border-radius-s;
   border-bottom-right-radius: $border-radius-s;
-  box-shadow: 1px 4px 3px transparentize($black, 0.5);
+  box-shadow: 1px 4px 3px transparentize(var(--shadow), 0.5);
   color: var(--text-color-default);
   margin: 0;
   padding: 0;
@@ -66,7 +66,7 @@
 .AutoSearchInput-suggestions-item:active,
 .AutoSearchInput-suggestions-item:focus,
 .AutoSearchInput-suggestions-item--highlighted {
-  color: $link-color;
+  color: var(--link-color);
   white-space: normal;
 
   .SearchSuggestion-icon-arrow {

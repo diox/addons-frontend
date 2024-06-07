@@ -78,7 +78,7 @@ h3 {
 a:link {
   @include font-medium;
 
-  color: $link-color;
+  color: var(--link-color);
 }
 
 em {

@@ -10,7 +10,7 @@ $icon-default-size: 32px;
     cursor: pointer;
 
     .SearchResult-link {
-      color: $link-color;
+      color: var(--link-color);
     }
   }
 }
@@ -30,7 +30,7 @@ $icon-default-size: 32px;
 
   &:focus,
   &:hover {
-    color: $link-color;
+    color: var(--link-color);
   }
 }
 
