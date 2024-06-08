@@ -158,8 +158,8 @@
      just for this. */
 
   .LanguagePicker-selector {
-    background-color: var(--white);
-    color: var(--text-color-default);
+    background-color: var(--base-bg-color);
+    color: var(--body-font-color);
     display: inline-block;
     font-family: sans-serif;
   }

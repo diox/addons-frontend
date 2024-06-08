@@ -2,6 +2,14 @@
 @import '~@mozilla-protocol/tokens/dist/index';
 
 // Base color variables
+// TODO:
+// - Find all colors used in individual components not defined here, like all
+//   the references to various $grey, all the calls to transparentize and such,
+//   and replace them with a CSS variable that describes the function rather
+//   than the color
+// - Split --white and rename
+// - Start messing with dark styles, figure out a good palette
+// - Fix remaining little details like SVG fills, shadows, etc.
 :root {
   --primary-font-color: #000;
   --body-font-color: #1d1d1d;
@@ -11,11 +19,26 @@
   --link-color: #0060df; /* $blue-60; */
   --showmorecard-gradient-color: #f4f9ff;
   --shadow: rgba(52, 59, 64, 0.5); /* transparentize(#343a40, 0.5) */
-  --white: #fff; /* FIXME need to split and rename */
+  --white: #fff;
   --header-base-color: #0f1126;
   --footer-base-color: #051818;
   --action-hover-color: #72c3fc;
   --background-page-content: #e9ecef;
+  --card-highlight-bg-color: #f9f9fa; /* $grey-10 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-font-color: #f1f1f1;
+    --body-font-color: #aaa;
+    --text-color-default: #bbb;
+    --sub-text-color: #ccc;
+    --base-bg-color: #212121;
+    --link-color: #3ea6ff;
+
+    --background-page-content: #0f0f0f;
+    --card-highlight-bg-color: #383838; /* $grey-10 */
+  }
 }
 
 // Category Colors
