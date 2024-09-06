@@ -23,7 +23,7 @@
 // This is the triangle at the top of the tooltip menu which is
 // actually just a tilted square.
 .TooltipMenu-arrow {
-  background-color: var(--white);
+  background-color: var(--base-bg-color);
   box-shadow: 0 0 2px var(--shadow);
   display: block;
   height: 8px;
@@ -46,7 +46,7 @@
 
 .TooltipMenu-list,
 .CardList .TooltipMenu-list {
-  background: var(--white);
+  background: var(--base-bg-color);
   border-radius: $border-radius-default;
   list-style-type: none;
   margin: 0;
@@ -81,7 +81,7 @@
       &:not(.Button) {
         @include text-align-start;
 
-        color: $grey-90;
+        color: var(--text-color-default);
         font-size: $font-size-default;
         line-height: $line-height-body;
       }
