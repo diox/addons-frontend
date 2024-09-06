@@ -130,14 +130,20 @@
   @include margin-end(8px);
 }
 
-.PromotedBadge-label--line {
-  color: $grey-90;
-}
 
-.PromotedBadge-label--recommended {
-  color: $orange-80;
-}
+/* In dark mode, we can inherit from the color defined above on the link, which
+   are slightly lighter and work fine. In light mode, we need to override them
+   for something that brings more constrast. */
+@media (prefers-color-scheme: light) {
+  .PromotedBadge-label--line {
+    color: $grey-90;
+  }
 
-.PromotedBadge-label--verified {
-  color: $green-80;
+  .PromotedBadge-label--recommended {
+    color: $orange-80;
+  }
+
+  .PromotedBadge-label--verified {
+    color: $green-80;
+  }
 }
