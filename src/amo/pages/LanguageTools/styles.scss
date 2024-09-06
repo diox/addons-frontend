@@ -11,7 +11,7 @@ $cell-padding: 6px;
 }
 
 .LanguageTools-header-row {
-  background: $grey-30;
+  background: var(--table-header-row-bg-color);
 }
 
 .LanguageTools-header-cell {
@@ -38,7 +38,7 @@ $cell-padding: 6px;
     padding: 0;
 
     &:nth-child(even) {
-      background: $grey-20;
+      background: var(--highlight-bg-color);
     }
 
     &:last-child {

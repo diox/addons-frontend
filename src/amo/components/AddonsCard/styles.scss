@@ -99,7 +99,7 @@
 
       .SearchResult-wrapper:focus,
       .SearchResult-wrapper:hover {
-        background-color: var(--card-highlight-bg-color);
+        background-color: var(--highlight-bg-color);
         border-radius: $border-radius-default;
 
         // stylelint-disable max-nesting-depth
