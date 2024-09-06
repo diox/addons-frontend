@@ -81,6 +81,10 @@ a:link {
   color: var(--link-color);
 }
 
+a:visited {
+  color: var(--visited-color);
+}
+
 em {
   @include font-regular-italic;
 }

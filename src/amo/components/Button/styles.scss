@@ -85,6 +85,10 @@ $micro-font-size: $font-size-xs;
     }
   }
 
+  &:visited {
+    color: $color;
+  }
+
   &:not(.Button--disabled),
   &.Button--micro:not(.Button--disabled) {
     &:hover {
