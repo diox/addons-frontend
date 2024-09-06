@@ -8,7 +8,10 @@
 //   and replace them with a CSS variable that describes the function rather
 //   than the color
 // - Split --white and rename
+// - Fix black text on dark background in buttons/badges
+// - Fix text input / form widgets that are still using light background
 // - Start messing with dark styles, figure out a good palette
+// - Check constrast in dark mode for accessibility, increase where necessary
 // - Fix remaining little details like SVG fills, shadows, etc.
 :root {
   --primary-font-color: #000;
