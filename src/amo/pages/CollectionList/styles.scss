@@ -4,7 +4,7 @@
   @include page-padding;
 
   .Card-contents {
-    background: var(--white);
+    background: var(--base-bg-color);
     font-size: $font-size-default;
 
     .CollectionList-listing {
