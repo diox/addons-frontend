@@ -28,7 +28,7 @@
   --footer-base-color: #051818;
   --action-hover-color: #72c3fc;
   --action-active-color: #1c7cd6;
-  --background-page-content: #e9ecef;
+  --accent-bg-color: #e9ecef;
   --highlight-bg-color: #f9f9fa; /* $grey-10 */
   --table-header-row-bg-color: #d7d7db;
 }
@@ -43,8 +43,7 @@
     --link-color: #3ea6ff;
     --visited-color: #c069ffs;
     --table-header-row-bg-color: #38383d;
-
-    --background-page-content: #0f0f0f;
+    --accent-bg-color: #0f0f0f;
     --highlight-bg-color: #383838; /* $grey-10 */
   }
 }

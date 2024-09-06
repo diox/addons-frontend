@@ -130,7 +130,7 @@ $micro-font-size: $font-size-xs;
 
 .Button--neutral {
   @include button(
-    $background: transparentize($grey-90, 0.9),
+    $background: var(--accent-bg-color),
     $background-active: transparentize($grey-90, 0.7),
     $background-hover: transparentize($grey-90, 0.8),
     $color: var(--primary-font-color)
@@ -139,7 +139,7 @@ $micro-font-size: $font-size-xs;
 
 .Button--light {
   @include button(
-    $background: var(--white),
+    $background: var(--base-bg-color),
     $background-active: $grey-10,
     $background-hover: $grey-20,
     $color: var(--text-color-default)
