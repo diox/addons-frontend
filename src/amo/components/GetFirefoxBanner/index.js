@@ -17,7 +17,7 @@ import {
 import Notice from 'amo/components/Notice';
 import Link from 'amo/components/Link';
 import tracking from 'amo/tracking';
-import { isFirefox } from 'amo/utils/compatibility';
+import { isFirefox, isFirefoxWithOldRootCerts } from 'amo/utils/compatibility';
 import translate from 'amo/i18n/translate';
 import { replaceStringsWithJSX } from 'amo/i18n/utils';
 import type { UserAgentInfoType } from 'amo/reducers/api';
@@ -73,7 +73,11 @@ export const GetFirefoxBannerBase = ({
     });
   };
 
-  if (isFirefox({ userAgentInfo })) {
+  const showSupportLinkForOldCertsFirefox = isFirefoxWithOldRootCerts({
+    userAgentInfo,
+  });
+
+  if (isFirefox({ userAgentInfo }) && !showSupportLinkForOldCertsFirefox) {
     return null;
   }
 
@@ -117,12 +121,33 @@ export const GetFirefoxBannerBase = ({
     ]);
   }
 
+  if (showSupportLinkForOldCertsFirefox) {
+    replacements.push([
+      'linkStart',
+      'linkEnd',
+      (text) => (
+        <a
+          href="https://support.mozilla.org/en-US/kb/root-certificate-expiration"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          {text}
+        </a>
+      ),
+    ]);
+  }
+
   const bannerContent = replaceStringsWithJSX({
-    text:
-      clientApp === CLIENT_APP_FIREFOX
-        ? i18n.gettext(`To use these add-ons, you'll need to
+    text: showSupportLinkForOldCertsFirefox
+      ? i18n.gettext(
+          `You need to %(downloadLinkStart)supdate Firefox%(downloadLinkEnd)s
+          to prevent %(linkStart)sadd-ons issues from root certificate
+          expiration%(linkEnd)s`,
+        )
+      : clientApp === CLIENT_APP_FIREFOX
+      ? i18n.gettext(`To use these add-ons, you'll need to
             %(downloadLinkStart)sdownload Firefox%(downloadLinkEnd)s.`)
-        : i18n.gettext(`To use Android extensions, you'll need
+      : i18n.gettext(`To use Android extensions, you'll need
             %(downloadLinkStart)sFirefox for Android%(downloadLinkEnd)s. To
             explore Firefox for desktop add-ons, please %(linkStart)svisit our
             desktop site%(linkEnd)s.`),

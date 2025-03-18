@@ -11,6 +11,7 @@ import {
   INCOMPATIBLE_ANDROID_UNSUPPORTED,
   INCOMPATIBLE_FIREFOX_FOR_IOS,
   INCOMPATIBLE_NOT_FIREFOX,
+  INCOMPATIBLE_OLD_ROOT_CERT_VERSION,
   INCOMPATIBLE_OVER_MAX_VERSION,
   INCOMPATIBLE_UNSUPPORTED_PLATFORM,
   UNKNOWN,
@@ -111,6 +112,7 @@ export const InstallButtonWrapperBase = (props: InternalProps): React.Node => {
       forIncompatibleAddon = true;
       showInstallButton = false;
       showDownloadButton = true;
+      console.warn('incompatible, not showing install, showing download');
     }
   }
 
